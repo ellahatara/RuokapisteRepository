@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    tools:context=".MainViewActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/profileButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:foregroundTint="#FFFFFF"
+        android:padding="10dp"
+        android:shadowColor="#00FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableLeft="@android:drawable/ic_menu_manage"
+        android:padding="10dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pointsButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#00FFFFFF"
+        android:drawableLeft="@android:drawable/btn_star"
+        android:padding="10dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/settingsButton"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/profileButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="410dp"
+        android:layout_height="694dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/restaurant1Button"
+                android:layout_width="352dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="Ylioppilastalo"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/food1_yo"
+                android:layout_width="167dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="30dp"
+                android:background="#E2E2E2"
+                android:padding="5dp"
+                android:text="Meal 1"
+                android:textColor="#303030"
+                app:layout_constraintEnd_toStartOf="@+id/textfood1_yo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/restaurant1Button" />
+
+
+            <TextView
+                android:id="@+id/food2_yo"
+                android:layout_width="167dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="30dp"
+                android:background="#E2E2E2"
+                android:padding="5dp"
+                android:text="Meal 2"
+                android:textColor="#303030"
+                app:layout_constraintEnd_toStartOf="@+id/textfood2_yo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/food1_yo" />
+
+            <TextView
+                android:id="@+id/food3_yo"
+                android:layout_width="167dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="30dp"
+                android:background="#E2E2E2"
+                android:padding="5dp"
+                android:text="Meal 3"
+                android:textColor="#303030"
+                app:layout_constraintEnd_toStartOf="@+id/textfood3_yo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/food2_yo" />
+
+            <TextView
+                android:id="@+id/textfood1_yo"
+                android:layout_width="184dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="29dp"
+                android:padding="5dp"
+                android:text="Burger"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/food1_yo"
+                app:layout_constraintTop_toBottomOf="@+id/restaurant1Button" />
+
+            <TextView
+                android:id="@+id/textfood2_yo"
+                android:layout_width="184dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="30dp"
+                android:padding="5dp"
+                android:text="Vege Burger"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/food2_yo"
+                app:layout_constraintTop_toBottomOf="@+id/textfood1_yo" />
+
+            <TextView
+                android:id="@+id/textfood3_yo"
+                android:layout_width="184dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="30dp"
+                android:padding="5dp"
+                android:text="Salad bar"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/food3_yo"
+                app:layout_constraintTop_toBottomOf="@+id/textfood2_yo" />
+
+            <Button
+                android:id="@+id/restaurant2Button"
+                android:layout_width="352dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:padding="5dp"
+                android:text="LUT Buffet"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textfood3_yo" />
+
+            <TextView
+                android:id="@+id/food1_lut"
+                android:layout_width="167dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="30dp"
+                android:background="#E2E2E2"
+                android:padding="5dp"
+                android:text="Meal 1"
+                android:textColor="#303030"
+                app:layout_constraintEnd_toStartOf="@+id/textfood1_lut"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/restaurant2Button" />
+
+            <TextView
+                android:id="@+id/food2_lut"
+                android:layout_width="167dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="30dp"
+                android:background="#E2E2E2"
+                android:padding="5dp"
+                android:text="Meal 2"
+                android:textColor="#303030"
+                app:layout_constraintEnd_toStartOf="@+id/textfood2_lut"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/food1_lut" />
+
+            <TextView
+                android:id="@+id/food3_lut"
+                android:layout_width="167dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="30dp"
+                android:background="#E2E2E2"
+                android:padding="5dp"
+                android:text="Meal 3"
+                android:textColor="#303030"
+                app:layout_constraintEnd_toStartOf="@+id/textfood3_lut"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/food2_lut" />
+
+            <TextView
+                android:id="@+id/textfood1_lut"
+                android:layout_width="184dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="30dp"
+                android:padding="5dp"
+                android:text="Chili con carne"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/food1_lut"
+                app:layout_constraintTop_toBottomOf="@+id/restaurant2Button" />
+
+            <TextView
+                android:id="@+id/textfood2_lut"
+                android:layout_width="184dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="30dp"
+                android:padding="5dp"
+                android:text="Chili sin carne"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/food2_lut"
+                app:layout_constraintTop_toBottomOf="@+id/textfood1_lut" />
+
+            <TextView
+                android:id="@+id/textfood3_lut"
+                android:layout_width="184dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="30dp"
+                android:padding="5dp"
+                android:text="Chicken soup"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/food3_lut"
+                app:layout_constraintTop_toBottomOf="@+id/textfood2_lut" />
+
+            <Button
+                android:id="@+id/restaurant3Button"
+                android:layout_width="352dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:padding="5dp"
+                android:text="Laseri"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textfood3_lut" />
+
+            <TextView
+                android:id="@+id/food1_laser"
+                android:layout_width="167dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="30dp"
+                android:background="#E2E2E2"
+                android:padding="5dp"
+                android:text="Meal 1"
+                android:textColor="#303030"
+                app:layout_constraintEnd_toStartOf="@+id/textfood1_laser"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/restaurant3Button" />
+
+            <TextView
+                android:id="@+id/food2_laser"
+                android:layout_width="167dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="30dp"
+                android:background="#E2E2E2"
+                android:padding="5dp"
+                android:text="Meal 2"
+                android:textColor="#303030"
+                app:layout_constraintEnd_toStartOf="@+id/textfood2_laser"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/food1_laser" />
+
+            <TextView
+                android:id="@+id/food3_laser"
+                android:layout_width="167dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="30dp"
+                android:background="#E2E2E2"
+                android:padding="5dp"
+                android:text="Meal 3"
+                android:textColor="#303030"
+                app:layout_constraintEnd_toStartOf="@+id/textfood3_laser"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/food2_laser" />
+
+            <TextView
+                android:id="@+id/textfood1_laser"
+                android:layout_width="184dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="30dp"
+                android:padding="5dp"
+                android:text="Tikka masala"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/food1_laser"
+                app:layout_constraintTop_toBottomOf="@+id/restaurant3Button" />
+
+            <TextView
+                android:id="@+id/textfood2_laser"
+                android:layout_width="184dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="30dp"
+                android:padding="5dp"
+                android:text="Vegan tikka masala"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/food2_laser"
+                app:layout_constraintTop_toBottomOf="@+id/textfood1_laser" />
+
+            <TextView
+                android:id="@+id/textfood3_laser"
+                android:layout_width="184dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="30dp"
+                android:padding="5dp"
+                android:text="Fish soup"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/food3_laser"
+                app:layout_constraintTop_toBottomOf="@+id/textfood2_laser" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
